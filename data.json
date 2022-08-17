@@ -1,0 +1,52 @@
+{
+    "items": [
+        {
+            "name": "Valen Amarilla",
+            "price": "625,00",
+            "status": "normal",
+            "img": "bag-0"
+        },
+        {
+            "name": "Valen Burdeos",
+            "price": "660,00",
+            "status": "normal",
+            "img": "bag-1"
+        },
+        {
+            "name": "Valen Piton Gris",
+            "price": "635,00",
+            "status": "out of stock",
+            "img": "bag-2"
+        },
+        {
+            "name": "Valen Piton Dorado",
+            "price": "620,00",
+            "status": "normal",
+            "img": "bag-3"
+        },
+        {
+            "name": "Valen Amarilla",
+            "price": "625,00",
+            "status": "normal",
+            "img": "bag-4"
+        },
+        {
+            "name": "Valen Burdeos",
+            "price": "660,00",
+            "status": "featured",
+            "img": "bag-5"
+        },
+        {
+            "name": "Valen Piton Gris",
+            "price": "635,00",
+            "status": "featured",
+            "img": "bag-6"
+        },
+        {
+            "name": "Valen Piton Dorado",
+            "price": "620,00",
+            "status": "featured",
+            "img": "bag-7"
+        }
+    ]
+}

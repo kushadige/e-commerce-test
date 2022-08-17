@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marlene Turanzas</title>
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/d76ff9e0d3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header class="main-header text-center">
+        <div class="container">
+            <h1 class="brand-title text-uppercase pt-5 pb-4">Marlene <div class="circle border-rounded s-3 center d-inline-flex" style="overflow: hidden;"><i class="fa-solid fa-bag-shopping"></i></div> Turanzas</h1>
+            <div>
+                <nav class="text-uppercase">
+                    <ul class="d-flex list-style-none border-bottom light pt-2 pb-2" style="justify-content: center; flex-wrap: wrap; gap: 10px;">
+                        <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Catalogo</a></li>
+                        <li><a href="#">Perfil</a></li>
+                        <li><a href="#">Prensa</a></li>
+                        <li><a href="#">E-store <i class="fa-solid fa-chevron-down"></i></a></li>
+                        <li><a href="#">F.A.Q</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">Espanol <i class="fa-solid fa-chevron-down"></i></a></li>
+                    </ul>
+                    <ul class="d-flex pt-2 pb-2 list-style-none" style="color: #999; font-size: .9rem; justify-content: center;">
+                        <li><a href="#">Mi Cuenta</a></li>
+                        <li><a href="#">Cesta</a></li>
+                        <li><a href="#">Finalizar Compra</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="shopping-card">
+                <div class="center" style="position: relative; top: -12px;">
+                    <div class="mb-1"">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </div>
+                    <div>
+                        <span class="product-count" style="font-weight: bold;">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main-content p-2">
+        <div class="container">
+            <div class="text-uppercase w-100 p-2 mt-1 mb-2" style="background-color: #fff; font-weight: bold; font-size: 1.5rem;">Bolsos</div>
+            <div class="d-flex mb-3">
+                <div>
+                    <select style="margin-right: 10px;">
+                        <option value="aleatorio">Aleatorio</option>
+                    </select>
+                </div>
+                <p>Mostrando 11 resultados</p>
+            </div>
+            <div class="items-container"></div>
+        </div>
+    </main>
+    <script src="script.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+/* BOOTSTRAP TARZI BİR CSS KÜTÜPHANESİ */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #333;
+}
+
+a { text-decoration: none; color: inherit; }
+
+.main-header {
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+.shopping-card {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #131313;
+    color: #f4f4f4;
+    padding: 20px 20px 12px;
+    cursor: pointer;
+}
+.shopping-card::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-style: solid;
+    border-width: 0 30px 10px;
+    border-color: transparent transparent #fff;
+}
+
+.circle { 
+    border: 1px solid #000; 
+}
+
+.main-header li {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.main-content {
+    background-color: #F0F1F3;
+    min-height: 100vh;
+}
+
+.items-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item {
+    background: #fff;
+    height: 325px;
+    width: 22.5%;
+    margin-bottom: 2.5%;
+}
+.item.featured .tag {
+    background-color: #2B2B2B;
+    border-left-color: #2B2B2B;
+    color: #8C8C8C;
+}
+.item.out-of-stock .tag {
+    background-color: #A1A1A1;
+    border-left-color: #A1A1A1;
+    color: #E4E4E4;
+}
+.item:not(.normal) .tag {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    transform-origin: top left;
+    transform: rotate(-90deg) translate(-90%, 25%);
+}
+.item:not(.normal) .tag::before {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 5px 10px;
+    border-color: transparent;
+    border-left-color: inherit;
+    bottom: -5px;
+    right: -10px;
+}
+
+.add {
+    position: absolute;
+    color: #ccc;
+    bottom: 0;
+    right: 0;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+/* UTILITIES */
+
+.center { display: flex; flex-direction: column; align-items: center; justify-content: center;}
+
+.text-center { text-align: center; }
+
+.list-style-none { list-style: none; }
+
+.text-uppercase { text-transform: uppercase; }
+
+/* size */
+.s-1 { width: 10px; height: 10px }
+.s-2 { width: 20px; height: 20px }
+.s-3 { width: 30px; height: 30px }
+.s-4 { width: 40px; height: 40px }
+.s-5 { width: 50px; height: 50px }
+
+/* display */
+.d-inline-flex { display: inline-flex; }
+.d-flex { display: flex; align-items: center; }
+.d-flex-column { display: flex; flex-direction: column; }
+
+/* width */
+.w-100 { width: 100%; }
+.w-75 { width: 75%; }
+.w-50 { width: 50%; }
+
+/* border */
+.border-rounded { border-radius: 50%; }
+.border-bottom { border-bottom: 1px solid #000; }
+.border-bottom.light { border-color: #ddd; }
+
+
+/* padding */
+.p-1 { padding: 10px; }
+.p-2 { padding: 20px; }
+.p-3 { padding: 30px; }
+.p-4 { padding: 40px; }
+.p-5 { padding: 50px; }
+/* padding-bottom */
+.pb-1 { padding-bottom: 10px; }
+.pb-2 { padding-bottom: 20px; }
+.pb-3 { padding-bottom: 30px; }
+.pb-4 { padding-bottom: 40px; }
+.pb-5 { padding-bottom: 50px; }
+/* padding-top */
+.pt-1 { padding-top: 10px; }
+.pt-2 { padding-top: 20px; }
+.pt-3 { padding-top: 30px; }
+.pt-4 { padding-top: 40px; }
+.pt-5 { padding-top: 50px; }
+
+/* margin */
+.m-1 { margin: 10px; }
+.m-2 { margin: 20px; }
+.m-3 { margin: 30px; }
+.m-4 { margin: 40px; }
+.m-5 { margin: 50px; }
+/* margin-bottom */
+.mb-1 { margin-bottom: 10px; }
+.mb-2 { margin-bottom: 20px; }
+.mb-3 { margin-bottom: 30px; }
+.mb-4 { margin-bottom: 40px; }
+.mb-5 { margin-bottom: 50px; }
+/* margin-top */
+.mt-1 { margin-top: 10px; }
+.mt-2 { margin-top: 20px; }
+.mt-3 { margin-top: 30px; }
+.mt-4 { margin-top: 40px; }
+.mt-5 { margin-top: 50px; }
+
+select {
+    padding: 10px;
+    border: none;
+    font-family: inherit;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1000px) {
+    .item {
+        width: 47.5%;
+    }
+}
+
+@media (max-width: 500px) {
+    .item {
+        width: 100%;
+    }
+}
